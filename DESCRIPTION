@@ -2,7 +2,7 @@ Package: mytestpkg
 Type: Package
 Title: Demonstrates some concepts of package writing
 Version: 0.1.0
-Author: Fabian
+Author: Fabian aka Fapjan
 Maintainer: Fabian <fabian@mail.ru>
 Description: This compendium contains data and code for the publication in <URL>    
 The version that matched te published results is archived at <doi:>
