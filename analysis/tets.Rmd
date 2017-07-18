@@ -20,14 +20,14 @@ library(mytestpkg)
 ```
 
 
-## Multiplication
+## Multiplications
 
 ```{r mult}
-a <- MultMean(c(10,12),2)
+b <- MultMean(c(10,12),2)
 ```
 
 The result of our mean multiplication is `r a`.
-
+I changed something.
 
 
 
