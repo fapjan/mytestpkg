@@ -1,0 +1,33 @@
+---
+title: "My first R package"
+author: 
+ - Fabian
+ - Heinz
+date: '`r Sys.Date()`'
+output: bookdown::pdf_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.width = 2,
+                      fig.align = "center")
+```
+
+```{r}
+library(mytestpkg)
+```
+
+
+## Multiplication
+
+```{r mult}
+a <- MultMean(c(10,12),2)
+```
+
+The result of our mean multiplication is `r a`.
+
+
+
+
