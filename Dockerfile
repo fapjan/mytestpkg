@@ -7,7 +7,7 @@ COPY . /mytestpkg
 RUN . /etc/environment \
 
 # install package
-&& R -e "devtools::install('/mytestpkg', dep = TRUE)" \
+&& R --vanilla "devtools::install('/mytestpkg', dep = TRUE)" \
 
 # run rmarkdown
-&& R -e "rmarkdown::render('/mytestpkg/analysis/tets.Rmd')"
+&& R --vanilla "rmarkdown::render('/mytestpkg/analysis/tets.Rmd')"
