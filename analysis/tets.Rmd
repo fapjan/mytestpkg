@@ -35,7 +35,7 @@ I changed *something* very important.
 Quantiles of random data are shown in Table \@ref(tab:tbl). The raw data is plotted in Figure \@ref(fig:plt). In a recent publication by [@costagliola2008impact] 
 these numbers are not mentioned. But [@scott2016quantitative] are very interested in random data.
 
-Ich will einen merge conflict provozieren!
+Ich will einen *merge conflict* provozieren!
 
 ```{r tbl}
 x1 <- runif(1800,0,16) 
