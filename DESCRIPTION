@@ -9,3 +9,4 @@ The version that matched te published results is archived at <doi:>
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Imports: compositions

@@ -4,6 +4,8 @@ author:
  - Fabian
  - Heinz
 date: '`r Sys.Date()`'
+bibliography: my_references.bib
+csl: applied-spectroscopy.csl
 output: bookdown::pdf_document2
 ---
 
@@ -11,14 +13,13 @@ output: bookdown::pdf_document2
 knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       warning = FALSE,
-                      fig.width = 2,
                       fig.align = "center")
 ```
 
 ```{r}
 library(mytestpkg)
 ```
-
+# Numbers
 
 ## Multiplications
 
@@ -26,8 +27,24 @@ library(mytestpkg)
 b <- MultMean(c(10,12),2)
 ```
 
-The result of our mean multiplication is `r a`.
-I changed something.
+The result of our mean multiplication is `r b`.
+I changed **something**.
+
+## Quantile
+Quantiles of random data are shown in Table \@ref(tab:tbl). The raw data is plotted in Figure \@ref(fig:plt). In a recent publication by [@costagliola2008impact] 
+these numbers are not mentioned. But [@scott2016quantitative] are very interested in random data.
 
 
 
+```{r tbl}
+x1 <- runif(1800,0,16) 
+q1 <- quantile(x1)  
+knitr::kable(q1, caption = 'Quantiles of random numbers.')
+```
+
+```{r plt, fig.cap="A plot of clr-transformed random numbers."}
+library(mytestpkg)
+hist(Sample100(x1))
+```
+
+# References
