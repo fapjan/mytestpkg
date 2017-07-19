@@ -28,7 +28,7 @@ b <- MultMean(c(10,12),2)
 ```
 
 The result of our mean multiplication is `r b`.
-I changed **something**.
+I changed *something* very important.
 
 ## Quantile
 Quantiles of random data are shown in Table \@ref(tab:tbl). The raw data is plotted in Figure \@ref(fig:plt). In a recent publication by [@costagliola2008impact] 
